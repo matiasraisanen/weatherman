@@ -11,11 +11,11 @@ class App extends Component {
 
   getWeather = () => {
     //Function for fetching the weather data
-    if (this.state.userInput === '') {   //If city is left empty, show an alert  
+    if (this.state.userInput === '') {   //If input is left empty, show an alert  
       alert("Error: city cannot be empty!")
     } else {
      fetch('http://api.openweathermap.org/data/2.5/weather?q=' + this.state.userInput + '&appid=7c4e12c423a54c4abaaaae8a0b1e0062&units=metric')
-          .then((response) => response.json()) 
+          .then((response) => response.json()) //Fetch the JSON response
           .then((responseData) => {
             if (responseData.cod == '404'){ //If no city is found with the given name, show an alert
               alert("Error: city not found")
@@ -54,7 +54,7 @@ class App extends Component {
   render() {
 
     const itemRows = this.state.savedCities.map((city) =>
-     //Extact data from the list of saved cities, and present each in its own div 
+     //Extract data from the list of saved cities, and present each in its own div 
       <div className="oneSaved" key={city.city}>
         {city.city}<br />
         {city.temperature}°C<br />
