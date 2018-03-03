@@ -6,8 +6,10 @@ Created using [Create React APP](https://github.com/facebook/create-react-app/tr
 Uses OpenWeatherMap's [Current weather data API](http://api.openweathermap.org/) for fetching weather data.
 
 User can save cities of their choice, and clear the list of saved cities.
+ 
+![alt text](http://renki.dy.fi//varasto/weathermandemo.png "User interface")  
+User interface
 
-![alt text](http://renki.dy.fi//varasto/weathermandemo.png "User interface")
 
 ## Launching the app
 
