@@ -7,7 +7,12 @@ Uses OpenWeatherMap's [Current weather data API](http://api.openweathermap.org/)
 
 User can save cities of their choice, and clear the list of saved cities.
 
-## Usage
+## Launching the app
+
+To start the application, assign the command "npm start" in the application root folder. Application can then be used at http://localhost:3000
+
+## Using the app
+
 Type desired city into the input field and click "Get weather".
 
 Use "Save city" to save the search.
