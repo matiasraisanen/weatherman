@@ -1,6 +1,8 @@
 # Weatherman
 A ReactJS application for fetching weather data.
 
+Main application: [src/App.js](https://github.com/matiasraisanen/weatherman/blob/master/src/App.js)
+
 Created using [Create React APP](https://github.com/facebook/create-react-app/tree/master)
 
 Uses OpenWeatherMap's [Current weather data API](http://api.openweathermap.org/) for fetching weather data.
