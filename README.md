@@ -7,7 +7,7 @@ Uses OpenWeatherMap's [Current weather data API](http://api.openweathermap.org/)
 
 User can save cities of their choice, and clear the list of saved cities.
 
-![alt text](http://renki.dy.fi//varasto/weatherman_demo.png "Demo image")
+![alt text](http://renki.dy.fi//varasto/weathermandemo.png "User interface")
 
 ## Launching the app
 
