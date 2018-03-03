@@ -21,6 +21,6 @@ To start the application, assign the command "npm start" in the application root
 
 Type desired city into the input field and click "Get weather".
 
-Use "Save city" to save the search.
+Use "Save city" to save the search into the user interface.
 
 Use "Clear saved" to empty the list of saved searches.
