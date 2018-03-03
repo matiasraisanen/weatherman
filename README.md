@@ -13,7 +13,7 @@ To start the application, assign the command "npm start" in the application root
 
 ## Using the app
 
-![alt text](http://renki.dy.fi//varasto/weatherman_demo.png "Demo image")
+
 
 Type desired city into the input field and click "Get weather".
 
