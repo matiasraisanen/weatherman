@@ -17,6 +17,7 @@ class App extends Component {
      fetch('http://api.openweathermap.org/data/2.5/weather?q=' + this.state.userInput + '&appid=7c4e12c423a54c4abaaaae8a0b1e0062&units=metric')
           .then((response) => response.json()) //Fetch the JSON response
           .then((responseData) => {
+            // eslint-disable-next-line
             if (responseData.cod == '404'){ //If no city is found with the given name, show an alert
               alert("Error: city not found")
             } else {  //Else add the city's data into state.
