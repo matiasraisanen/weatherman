@@ -76,8 +76,4 @@ describe('Weatherman', () => {
     ).toEqual(true);
   });
 
-
-
-
-
 });

@@ -9,17 +9,12 @@ Uses OpenWeatherMap's [Current weather data API](http://api.openweathermap.org/)
 
 User can save cities of their choice, and clear the list of saved cities.
 
-<<<<<<< HEAD
-![alt text](http://renki.dy.fi//varasto/weathermandemo.png "User interface")  
-=======
 ![Alt Text](http://renki.dy.fi/varasto/weathermandemo.gif "User interface")    
->>>>>>> dd8d5ae67b9dd9bae75136cf21ffc81e2a1c7489
 User interface
-
 
 ## Launching the app
 
-To start the application, assign the command "npm start" in the application root folder. Application can then be used at http://localhost:3000
+To start the application, assign the command "npm start" in the application root directory. Application can then be used at http://localhost:3000
 
 ## Using the app
 
@@ -32,3 +27,5 @@ Use "Clear saved" to empty the list of saved searches.
 ## Testing
 
 The file [src/App.test.js](https://github.com/matiasraisanen/weatherman/blob/master/src/App.test.js) contains unit tests to ensure the interface is rendered correctly.
+
+Run tests by assigning the command "npm test" in the application root directory.
