@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jest-cli": "^22.4.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
@@ -10,10 +11,20 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --watchAll",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "navalia": "^1.3.0"
+    "babel-jest": "^22.4.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "expect": "^22.4.0",
+    "jest": "^22.4.2",
+    "mocha": "^5.0.1",
+    "navalia": "^1.3.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.2.0"
   }
 }

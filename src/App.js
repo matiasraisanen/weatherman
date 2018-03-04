@@ -29,7 +29,7 @@ class App extends Component {
             }else{  //Else add the city's data into state.
               this.setState({
                 city: responseData.name,
-                temperature: parseInt(responseData.main.temp), //No decimals in temperature
+                temperature: parseInt(responseData.main.temp, 10), //No decimals in temperature
                 weather: responseData.weather[0].main,
                 icon: "http://openweathermap.org/img/w/" + responseData.weather[0].icon + ".png", //Construct the imageURL using the icon name.
               });
@@ -86,11 +86,11 @@ class App extends Component {
         </div>
 
         <div className="buttons">
-          <input type='text' onChange={this.inputChanged} value={this.state.userInput} placeholder='city'></input>
-          <button onClick={this.getWeather}>Get weather</button>
+          <input className="userInput" type='text' onChange={this.inputChanged} value={this.state.userInput} placeholder='city'></input>
+          <button className="getWeather" onClick={this.getWeather}>Get weather</button>
           <br/>
-          <button onClick={this.saveCity}>Save city</button>
-          <button onClick={this.clear}>Clear saved</button>
+          <button className="saveCity" onClick={this.saveCity}>Save city</button>
+          <button className="clear" onClick={this.clear}>Clear saved</button>
         </div>
 
         <div className="allSaved">
