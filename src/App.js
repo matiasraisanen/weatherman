@@ -53,6 +53,13 @@ class App extends Component {
     }
   }
 
+  deleteOne = (index) => {
+    //Delete one city, identified by its index in the list of saved cities
+    var newList = this.state.savedCities;
+    newList.splice(index,1);
+    this.setState({savedCities: newList});
+}
+
   clear = () => {
   //Clear all saved cities.
     this.setState({savedCities: []});
@@ -63,10 +70,13 @@ class App extends Component {
     const cityDivs = this.state.savedCities.map((city, index) =>
     //Extract data from the list of saved cities, and present each in its own division
       <div className="oneSaved" key={index}>
+        <button className="delete" onClick={() => this.deleteOne(index)}>X</button><br/>
         {city.city}<br/>
         {city.temperature}°C<br/>
         {city.weather}<br/>
         <img src={city.icon} alt='icon'></img><br/>
+
+
       </div>
     )
 
@@ -81,7 +91,6 @@ class App extends Component {
           City: {this.state.city}<br/>
           Temperature: {this.state.temperature} °C<br/>
           Weather: {this.state.weather}<br/>
-
           <img src={this.state.icon} alt='icon'/><br/>
         </div>
 
