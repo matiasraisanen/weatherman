@@ -1,5 +1,7 @@
 .App {
+  max-width: 700px;
   text-align: center;
+  margin: auto;
 }
 
 .App-logo {
@@ -58,6 +60,7 @@ button:hover {
  }
 
 .allSaved .oneSaved {
+    width: 90px;
     display: inline-block;
     border-radius: 8px;
     background-color: #117a8e;

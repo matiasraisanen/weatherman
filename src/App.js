@@ -86,7 +86,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Weather Man</h1>
         </header>
-
+        
         <div className="weatherdata">
           City: {this.state.city}<br/>
           Temperature: {this.state.temperature} °C<br/>
