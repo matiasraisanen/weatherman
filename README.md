@@ -1,5 +1,6 @@
 # Weatherman
-A ReactJS application for fetching weather data.
+A ReactJS application for fetching weather data.    
+Live version: [Weather Man](http://renki.dy.fi/weatherman)
 
 Main application: [src/App.js](https://github.com/matiasraisanen/weatherman/blob/master/src/App.js)
 

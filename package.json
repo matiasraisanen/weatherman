@@ -1,7 +1,8 @@
 {
   "name": "weatherman",
   "version": "0.1.0",
-  "private": true,
+  "homepage" : "http://renki.dy.fi/weatherman",
+  
   "dependencies": {
     "jest-cli": "^22.4.2",
     "react": "^16.2.0",

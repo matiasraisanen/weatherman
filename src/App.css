@@ -2,6 +2,11 @@
   max-width: 700px;
   text-align: center;
   margin: auto;
+  border: 5px;
+  border-color: #117a8e;
+  border-style: solid;
+  border-radius: 10px;
+  padding-bottom: 40px;
 }
 
 .App-logo {
