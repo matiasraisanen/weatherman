@@ -17,7 +17,8 @@ User interface
 
 ## Launching the app
 
-To start the application, assign the command "npm start" in the application root directory. Application can then be used at http://localhost:3000
+To start the application, assign the command "npm start" in the application root directory. Application can then be used at http://localhost:3000    
+You can also try the live version hosted on my website: [Weather Man Live](http://renki.dy.fi/weatherman)
 
 ## Using the app
 
