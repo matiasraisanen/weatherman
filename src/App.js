@@ -19,13 +19,13 @@ class App extends Component {
   getWeather = () => {
     //Fetch the weather data
     if (this.state.userInput === '') {   //If input is left empty, show an alert
-      alert("Error: city cannot be empty!")
+      alert("Error: City cannot be empty!")
     }else{  //Else proceed with fetching the weather daata
      fetch('http://api.openweathermap.org/data/2.5/weather?q=' + this.state.userInput + '&appid=7c4e12c423a54c4abaaaae8a0b1e0062&units=metric')
           .then((response) => response.json()) //Fetch the JSON response
           .then((responseData) => {
             if (responseData.cod === '404'){ //If no city is found with the given name, show an alert
-              alert("Error: city not found")
+              alert("Error: City not found")
             }else{  //Else add the city's data into state.
               this.setState({
                 city: responseData.name,
@@ -46,7 +46,7 @@ class App extends Component {
   saveCity = () => {
   //Save the city into user interface
     if (this.state.city === '') { //If no city is selected, show an alert
-      alert("Error: no city selected!")
+      alert("Error: No city selected!")
     }else{
       var newCity = {city: this.state.city, weather: this.state.weather, temperature: this.state.temperature, icon: this.state.icon};
       this.setState({savedCities: [...this.state.savedCities, newCity]}); //Add newCity to the list of saved cities.
@@ -89,10 +89,10 @@ class App extends Component {
 
         <div className="weatherdata">
           City: {this.state.city}<br/>
-          Temperature: {this.state.temperature} {(this.state.temperature != '') ? <text>°C<br/></text> : <br/>}
+          Temperature: {this.state.temperature} {(this.state.temperature !== '') ? <text>°C<br/></text> : <br/>}
           Weather: {this.state.weather}<br/>
           {
-            (this.state.icon == '') ? (<br/>) : (<img src={this.state.icon} alt='icon'/>)
+            (this.state.icon === '') ? <br/> : (<img src={this.state.icon} alt='icon'/>)
           }
         </div>
 
