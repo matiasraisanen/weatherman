@@ -1,12 +1,11 @@
 {
   "name": "weatherman",
   "version": "0.1.0",
-  "homepage" : "http://renki.dy.fi/weatherman",
+  "homepage": "http://matiasraisanen.com/weatherman",
   "private": true,
-
   "dependencies": {
     "jest-cli": "^22.4.2",
-    "react": "^16.2.0",
+    "react": "^16.3.2",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
   },
